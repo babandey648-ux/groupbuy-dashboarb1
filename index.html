@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GroupBuy Analytics</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; background: #f6f5f1; color: #1b1b19; font-family: system-ui, "Segoe UI", Arial, sans-serif; }
+      .wrap { max-width: 1160px; margin: 0 auto; padding: 28px 20px 56px; }
+      .row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+      .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); margin: 16px 0; }
+      .charts { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+      .card { background: #fff; border: 1px solid #e4e2da; border-radius: 10px; padding: 16px; }
+      h1 { font-size: 28px; margin: 0; } h2 { font-size: 16px; margin: 0 0 12px; }
+      select, button { font: inherit; padding: 8px 12px; border-radius: 8px; border: 1px solid #cfccc2; background: #fff; cursor: pointer; }
+      button.on { background: #2a78d6; border-color: #2a78d6; color: #fff; }
+      .note { background: #fff4d6; border-radius: 8px; padding: 10px 14px; font-size: 14px; margin: 14px 0; }
+      .scroll { overflow-x: auto; }
+      table { border-collapse: collapse; width: 100%; font-size: 14px; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #eeece5; }
+      td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+      .muted { color: #66645e; font-size: 13px; }
+      .slide { min-height: 380px; padding: 32px; display: flex; flex-direction: column; }
+      .slide h2 { font-size: 28px; margin-bottom: 18px; color: #1f3f73; }
+      .slide li { font-size: 19px; margin-bottom: 12px; line-height: 1.4; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/App.jsx"></script>
+  </body>
+</html>
